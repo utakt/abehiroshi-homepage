@@ -7,10 +7,17 @@ module.exports = {
             .rule('images')
             .use('url-loader')
             .loader('url-loader')
-            .tap(options => Object.assign(options, { limit: 40480 }))
+            .tap(options => Object.assign(options, { limit: 40480 })) 
+    },
 
-        const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-        types.forEach(type => addStyleResource(config.module.rule('css').oneOf(type)))    
+    configureWebpack: {
+      optimization: {
+        splitChunks: false
+      }
+    },
+
+    css: {
+      extract: false,
     }
 }
 

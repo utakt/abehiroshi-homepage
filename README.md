@@ -35,3 +35,7 @@ Azure CDN > エンドポイント > 配信元を以下のように設定
 - 配信元のホスト名 → Azure Storageの静的サイトのホスト
 - 配信元のホストヘッダー → Azure Storageの静的サイトのホスト
 - 配信元のホストパス → 設定なしでもよい
+
+#### jsとcssをまとめてWebpackバンドルする
+Vue Cliだと以下
+https://filosophy.org/code/bundling-vue-css-and-js-into-a-single-output-file/
